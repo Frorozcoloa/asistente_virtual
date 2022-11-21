@@ -7,7 +7,7 @@ Este es un proyecto para la creación de un asistente virtual.
 
 ```
 docker build -t virtualass .
-docker tun --it --rm virtualass bash
+docker run -it --rm -v $(pwd):/workspace  --device /dev/snd:/dev/snd virtualass bash
 ```
 
 Recuerda en name_canción, la ruta del archivo de música
